@@ -1,0 +1,8 @@
+.price {}
+
+.description {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1px;
+  /* Reduced bottom margin */
+}

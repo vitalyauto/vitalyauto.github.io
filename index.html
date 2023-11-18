@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCarbon - BMW Services in Sacramento, CA</title>
+    <meta name="description" content="Expert BMW repair and maintenance in Sacramento. Affordable, reliable BMW service for all models with satisfaction guaranteed.">
+    <meta name="keywords" content="BMW repair in Sac, BMW car repair, BMW Service, BMW Repairs, Luxury Car Maintenance, BMW Performance, German Auto Service, BMW Expertise, BMW Auto Care, BMW Technicians, Ultimate Driving Machine Service, BMW Parts and Service, BMW Engine Experts, BMW Body Shop, BMW Diagnostic Specialists, BMW Customizations, BMW Oil Change, BMW Brake Service, Bimmer Care, BMW Restoration, BMW Vehicle Inspection, BMW Performance Tuning">
+    <meta property="og:title" content="AutoCarbon - Premier BMW Repair Services in Sacramento">
+    <meta property="og:description" content="Your go-to source for BMW repairs, performance tuning, and maintenance. Cheaper than dealerships with guaranteed service satisfaction.">
+    <meta property="og:image" content="link-to-image">
+    <meta property="og:url" content="your-website-url">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html" style="padding: 10px;">
+        <img src="./imgs/logo.svg" alt="AutoCarbon Logo" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:vitaly@autocarbon.co">Email Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Alert, initially hidden -->
+    <div class="alert alert-success" id="submitAlert" style="display: none;">
+      Form submitted successfully!
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="serviceRequestModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Service Request Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="serviceRequestModalClose">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="serviceRequestForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+              </div>
+
+              <!-- Honeypot field for spam protection (keep it hidden) -->
+              <input type="text" name="honeypot" style="display:none">
+
+              <!-- Hidden fields -->
+              <input type="hidden" name="accessKey" value="27cb725d-7e09-437d-bbb8-6794b7faf64f">
+              <input type="hidden" name="subject" value="Contact us from - autocarbon.com">
+              <input type="hidden" name="replyTo" value="vitaly@autocarbon.co">
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-5">
+      <!-- Service Row -->
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <img src="./imgs/service1.jpg" class="img-fluid" alt="Service Image" style="border-radius: 10px;">
+        </div>
+        <div class="col-md-8">
+          <h3> BMW Hybrid EME Recovery Service</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <p class="description">Our Price</p>
+              <p class="price"><strong>$5,000</strong></p>
+            </div>
+            <div class="col-md-4">
+              <p class="description">Typical dealer price</p>
+              <p class="price"><strong>$7,000 - $14,000</strong></p>
+            </div>
+
+            <div class="col-md-4">
+              <p class="description"> Your Savings</p>
+              <p class="price"><strong>$2,000 - $12,000</strong></p>
+            </div>
+          </div>
+          <p>Our service begins with a comprehensive diagnosis to pinpoint the exact cause of failure in the EME unit of your BMW. Following this, we undertake all necessary hardware and software repairs. To guarantee full functionality, we conduct rigorous testing on the unit, ensuring it performs effectively both as an inverter and a DC to DC power supply.
+            Please note that installing a pre-owned EME unit is not feasible as it is secured with a VIN-specific lock and an immobilizer security code, ensuring each unit is matched to its original vehicle for safety and security.</p>
+          <p>
+            Common Symptoms
+          </p>
+          <ul>
+            <li>Vehicle does not go into gear</li>
+            <li>Vehicle does not charge</li>
+            <li>No communication with EME</li>
+            <li>Warning Lights Pertaining to High Voltage Battery or Charging</li>
+          </ul>
+          <p>
+            The vehicle must be brought to our workshop at the owner's expense for a preliminary diagnostic evaluation. Upon assessment, if your vehicle is suitable, we will undertake the EME module recovery. Reasons for ineligibility may include extensive circuit damage, irreparable board-level destruction, evidence of tampering, or previous repair attempts that compromise the integrity of the unit. In instances where the vehicle does not qualify, a diagnostic fee of $200 will be charged.
+
+          </p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#serviceRequestModal">Submit a Service Request</a>
+        </div>
+      </div>
+
+
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <img src="./imgs/service2.png" class="img-fluid" alt="Service Image" style="border-radius: 10px;">
+        </div>
+        <div class="col-md-8">
+          <h3> BMW Hybrid Battery Recovery Service</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <p class="description">Our Price</p>
+              <p class="price"><strong>$2,500</strong></p>
+            </div>
+            <div class="col-md-4">
+              <p class="description">Typical dealer price</p>
+              <p class="price"><strong>$3,200 - $9,700</strong></p>
+            </div>
+
+            <div class="col-md-4">
+              <p class="description"> Your Savings</p>
+              <p class="price"><strong>$700 - 7,200</strong></p>
+            </div>
+          </div>
+          <p>Your vehicle needs to be transported to our service center, which is the responsibility of the owner, for an initial diagnostic check. Post-evaluation, if your vehicle meets our criteria, we will proceed with the recovery of the high voltage battery. Ineligibility for service may arise due to severe circuitry damage, beyond-repair damage at the board level, signs of tampering, or prior repair attempts that have adversely affected the unit's integrity. Should your vehicle not be eligible for recovery, a diagnostic fee of $200 will be applied.
+            .</p>
+          <p>
+            Our trained technicians start with a comprehensive diagnostic to pinpoint issues with your vehicle's high voltage battery. They then meticulously repair both hardware and software components to restore full functionality. Rigorous performance tests follow to ensure the battery meets our high standards. We verify the battery's reliability through a final inspection before releasing the vehicle. You receive a fully functional, tested, and verified high voltage battery, ensuring your satisfaction and safety.
+          </p>
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#serviceRequestModal">Submit a Service Request</a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="bg-light text-center py-3 mt-4">
+      <!-- Footer content here -->
+    </footer>
+
+    <!-- Service Request Form (Popup) -->
+    <div class="modal" id="serviceRequestForm">
+      <!-- Your form goes here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
