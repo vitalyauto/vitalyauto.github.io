@@ -6,3 +6,14 @@
   margin-bottom: 1px;
   /* Reduced bottom margin */
 }
+
+.opener {
+  border: 2px solid lightgray;
+  border-radius: 10px; /* smooth radius curve */
+  padding: 20px;
+  margin: 5% auto; /* centers the div horizontally */
+  max-width: 800px; /* adjust as needed */
+  background-color: lightgray; /* changed to light gray fill */
+  font-family: Arial, sans-serif; /* simple and clean font */
+  color: black; /* ensures text color is visible on gray background */
+}
